@@ -2,7 +2,6 @@
     <img class="card-img-top" src="{{ product.imageUrl }}" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">{{ product.title }}</h5>
-        <p>{{product.$key}}</p>
         <p class="card-text">{{ product.price | currency: 'USD': true }}</p>
         <div *ngIf="showActions && shoppingCart" class="card-footer">
             <button
